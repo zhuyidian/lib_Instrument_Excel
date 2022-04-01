@@ -1,0 +1,16 @@
+# Excel
+/Excel/.gradle/
+/Excel/.idea/
+/Excel/.svn/
+/Excel/java_pid5600.hprof   
+/Excel/java_pid8156.hprof 
+/Excel/*.hprof 
+/Excel/*.iml
+
+#sample
+/Excel/sample/build/
+/Excel/sample/*.iml
+
+#thread
+/Excel/excel/build/
+/Excel/excel/*.iml
