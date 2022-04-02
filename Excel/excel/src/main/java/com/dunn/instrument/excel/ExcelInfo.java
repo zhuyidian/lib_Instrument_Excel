@@ -31,10 +31,14 @@ public class ExcelInfo {
         mModule0.mPid = info.mModule0.mPid;
         mModule0.mApplicationStart = info.mModule0.mApplicationStart;
         mModule0.mApplicationInit = info.mModule0.mApplicationInit;
+        mModule0.mBOOTBroadcastStart = info.mModule0.mBOOTBroadcastStart;
         mModule0.mBroadcastStart = info.mModule0.mBroadcastStart;
         mModule0.mServiceStart = info.mModule0.mServiceStart;
         mModule0.mServiceInit = info.mModule0.mServiceInit;
         mModule0.mServiceCommand = info.mModule0.mServiceCommand;
+        mModule0.mService1Start = info.mModule0.mService1Start;
+        mModule0.mService1Init = info.mModule0.mService1Init;
+        mModule0.mService1Command = info.mModule0.mService1Command;
 
         //sheet 1
         for(Map.Entry<String,String> entry:info.mFunction1Value.entrySet()){

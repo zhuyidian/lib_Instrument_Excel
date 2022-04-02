@@ -60,6 +60,16 @@ public class ExcelDeal {
     public static final String FUNCTION3_COL = "function3";
     public static final String FUNCTION4_COL = "function4";
     public static final String FUNCTION5_COL = "function5";
+    public static final String FUNCTION6_COL = "function6";
+    public static final String FUNCTION7_COL = "function7";
+    public static final String FUNCTION8_COL = "function8";
+    public static final String FUNCTION9_COL = "function9";
+    public static final String FUNCTION10_COL = "function10";
+    public static final String FUNCTION11_COL = "function11";
+    public static final String FUNCTION12_COL = "function12";
+    public static final String FUNCTION13_COL = "function13";
+    public static final String FUNCTION14_COL = "function14";
+    public static final String FUNCTION15_COL = "function15";
     private Map<String, String> mFunctionMap = new HashMap<>();
     public static final String[] FUNCTION_COL = new String[]{
             FUNCTION1_COL,
@@ -67,6 +77,16 @@ public class ExcelDeal {
             FUNCTION3_COL,
             FUNCTION4_COL,
             FUNCTION5_COL,
+            FUNCTION6_COL,
+            FUNCTION7_COL,
+            FUNCTION8_COL,
+            FUNCTION9_COL,
+            FUNCTION10_COL,
+            FUNCTION11_COL,
+            FUNCTION12_COL,
+            FUNCTION13_COL,
+            FUNCTION14_COL,
+            FUNCTION15_COL,
     };
 
     //sheet 2
