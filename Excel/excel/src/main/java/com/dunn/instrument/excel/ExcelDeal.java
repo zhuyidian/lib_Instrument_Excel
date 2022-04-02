@@ -39,10 +39,11 @@ public class ExcelDeal {
     //sheet 0
     private static final String SHEET_0 = "module";
     private static final int SHEET_ID_0 = 0;
-    private static final int COLUMNS_MUN = 10;
+    private static final int COLUMNS_MUN = 11;
     private static final String PID_COL = "pid";
     private static final String APP_START_COL = "app_start";
     private static final String APP_INIT_COL = "app_init";
+    private static final String BOOT_BROADCAST_START_COL = "boot_broadcast_start";
     private static final String BROADCAST_START_COL = "broadcast_start";
     private static final String SERVICE_START_COL = "service_start";
     private static final String SERVICE_INIT_COL = "service_init";
@@ -191,19 +192,21 @@ public class ExcelDeal {
         sheet.addCell(label);
         label = new Label(2, 0, APP_INIT_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(3, 0, BROADCAST_START_COL, getHeader());
+        label = new Label(3, 0, BOOT_BROADCAST_START_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(4, 0, SERVICE_START_COL, getHeader());
+        label = new Label(4, 0, BROADCAST_START_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(5, 0, SERVICE_INIT_COL, getHeader());
+        label = new Label(5, 0, SERVICE_START_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(6, 0, SERVICE_COMMAND_COL, getHeader());
+        label = new Label(6, 0, SERVICE_INIT_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(7, 0, SERVICE1_COMMAND_COL, getHeader());
+        label = new Label(7, 0, SERVICE_COMMAND_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(8, 0, SERVICE1_COMMAND_COL, getHeader());
+        label = new Label(8, 0, SERVICE1_START_COL, getHeader());
         sheet.addCell(label);
-        label = new Label(9, 0, SERVICE1_COMMAND_COL, getHeader());
+        label = new Label(9, 0, SERVICE1_INIT_COL, getHeader());
+        sheet.addCell(label);
+        label = new Label(10, 0, SERVICE1_COMMAND_COL, getHeader());
         sheet.addCell(label);
 
         //sheet 1
@@ -281,18 +284,20 @@ public class ExcelDeal {
             case 2:
                 return new Label(col, raw, info.mModule0.mApplicationInit);
             case 3:
-                return new Label(col, raw, info.mModule0.mBroadcastStart);
+                return new Label(col, raw, info.mModule0.mBOOTBroadcastStart);
             case 4:
-                return new Label(col, raw, info.mModule0.mServiceStart);
+                return new Label(col, raw, info.mModule0.mBroadcastStart);
             case 5:
-                return new Label(col, raw, info.mModule0.mServiceInit);
+                return new Label(col, raw, info.mModule0.mServiceStart);
             case 6:
-                return new Label(col, raw, info.mModule0.mServiceCommand);
+                return new Label(col, raw, info.mModule0.mServiceInit);
             case 7:
-                return new Label(col, raw, info.mModule0.mService1Start);
+                return new Label(col, raw, info.mModule0.mServiceCommand);
             case 8:
-                return new Label(col, raw, info.mModule0.mService1Init);
+                return new Label(col, raw, info.mModule0.mService1Start);
             case 9:
+                return new Label(col, raw, info.mModule0.mService1Init);
+            case 10:
                 return new Label(col, raw, info.mModule0.mService1Command);
             default:
                 return null;

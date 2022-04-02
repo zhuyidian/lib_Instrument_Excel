@@ -70,6 +70,7 @@ public class ExcelInfo {
         public String mPid;
         public String mApplicationStart;
         public String mApplicationInit;
+        public String mBOOTBroadcastStart;
         public String mBroadcastStart;
         public String mServiceStart;
         public String mServiceInit;
@@ -84,6 +85,7 @@ public class ExcelInfo {
                     "mPid='" + mPid + '\'' +
                     ", mApplicationStart='" + mApplicationStart + '\'' +
                     ", mApplicationInit='" + mApplicationInit + '\'' +
+                    ", mBOOTBroadcastStart='" + mBOOTBroadcastStart + '\'' +
                     ", mBroadcastStart='" + mBroadcastStart + '\'' +
                     ", mServiceStart='" + mServiceStart + '\'' +
                     ", mServiceInit='" + mServiceInit + '\'' +
