@@ -97,6 +97,16 @@ public class ExcelDeal {
     public static final String UI3_COL = "ui3";
     public static final String UI4_COL = "ui4";
     public static final String UI5_COL = "ui5";
+    public static final String UI6_COL = "ui6";
+    public static final String UI7_COL = "ui7";
+    public static final String UI8_COL = "ui8";
+    public static final String UI9_COL = "ui9";
+    public static final String UI10_COL = "ui10";
+    public static final String UI11_COL = "ui11";
+    public static final String UI12_COL = "ui12";
+    public static final String UI13_COL = "ui13";
+    public static final String UI14_COL = "ui14";
+    public static final String UI15_COL = "ui15";
     private Map<String, String> mUiMap = new HashMap<>();
     public static final String[] UI_COL = new String[]{
             UI1_COL,
@@ -104,6 +114,16 @@ public class ExcelDeal {
             UI3_COL,
             UI4_COL,
             UI5_COL,
+            UI6_COL,
+            UI7_COL,
+            UI8_COL,
+            UI9_COL,
+            UI10_COL,
+            UI11_COL,
+            UI12_COL,
+            UI13_COL,
+            UI14_COL,
+            UI15_COL,
     };
 
     public ExcelDeal(Context context) {
