@@ -39,7 +39,7 @@ public class ExcelDeal {
     //sheet 0
     private static final String SHEET_0 = "module";
     private static final int SHEET_ID_0 = 0;
-    private static final int COLUMNS_MUN = 7;
+    private static final int COLUMNS_MUN = 10;
     private static final String PID_COL = "pid";
     private static final String APP_START_COL = "app_start";
     private static final String APP_INIT_COL = "app_init";
@@ -47,6 +47,9 @@ public class ExcelDeal {
     private static final String SERVICE_START_COL = "service_start";
     private static final String SERVICE_INIT_COL = "service_init";
     private static final String SERVICE_COMMAND_COL = "service_command";
+    private static final String SERVICE1_START_COL = "service1_start";
+    private static final String SERVICE1_INIT_COL = "service1_init";
+    private static final String SERVICE1_COMMAND_COL = "service1_command";
 
     //sheet 1
     private static final String SHEET_1 = "function";
@@ -196,6 +199,12 @@ public class ExcelDeal {
         sheet.addCell(label);
         label = new Label(6, 0, SERVICE_COMMAND_COL, getHeader());
         sheet.addCell(label);
+        label = new Label(7, 0, SERVICE1_COMMAND_COL, getHeader());
+        sheet.addCell(label);
+        label = new Label(8, 0, SERVICE1_COMMAND_COL, getHeader());
+        sheet.addCell(label);
+        label = new Label(9, 0, SERVICE1_COMMAND_COL, getHeader());
+        sheet.addCell(label);
 
         //sheet 1
         // 添加第一个工作表并设置第一个Sheet的名字
@@ -279,6 +288,12 @@ public class ExcelDeal {
                 return new Label(col, raw, info.mModule0.mServiceInit);
             case 6:
                 return new Label(col, raw, info.mModule0.mServiceCommand);
+            case 7:
+                return new Label(col, raw, info.mModule0.mService1Start);
+            case 8:
+                return new Label(col, raw, info.mModule0.mService1Init);
+            case 9:
+                return new Label(col, raw, info.mModule0.mService1Command);
             default:
                 return null;
         }

@@ -74,6 +74,9 @@ public class ExcelInfo {
         public String mServiceStart;
         public String mServiceInit;
         public String mServiceCommand;
+        public String mService1Start;
+        public String mService1Init;
+        public String mService1Command;
 
         @Override
         public String toString() {
@@ -85,6 +88,9 @@ public class ExcelInfo {
                     ", mServiceStart='" + mServiceStart + '\'' +
                     ", mServiceInit='" + mServiceInit + '\'' +
                     ", mServiceCommand='" + mServiceCommand + '\'' +
+                    ", mService1Start='" + mService1Start + '\'' +
+                    ", mService1Init='" + mService1Init + '\'' +
+                    ", mService1Command='" + mService1Command + '\'' +
                     '}';
         }
     }
