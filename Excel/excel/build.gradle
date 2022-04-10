@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
 }
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'android-aspectjx'
 
 repositories {
     mavenCentral()
@@ -42,4 +43,5 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
     implementation files('libs\\jxl.jar')
+    implementation 'org.aspectj:aspectjrt:1.8.+'
 }

@@ -59,6 +59,13 @@ public class ExcelHelp implements Runnable {
     }
 
     /**
+     * 有必要清除数据，重新创建文件
+     */
+    public void clearExcel(){
+        mExcelDeal.delExcel();
+    }
+
+    /**
      * 有必要设置function表列名称
      * @param name
      */
@@ -72,13 +79,6 @@ public class ExcelHelp implements Runnable {
      */
     public void setUiRowName(String[] name){
         mExcelDeal.setUiRowName(name);
-    }
-
-    /**
-     * 有必要清除数据，重新创建文件
-     */
-    public void clearExcel(){
-        mExcelDeal.delExcel();
     }
 
     /**
