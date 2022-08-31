@@ -7,8 +7,6 @@ import android.content.res.Configuration;
 import android.os.Process;
 import android.util.Log;
 
-import com.dunn.instrument.excel.ExcelHelp;
-
 public class MainApp extends Application {
 
     @Override
