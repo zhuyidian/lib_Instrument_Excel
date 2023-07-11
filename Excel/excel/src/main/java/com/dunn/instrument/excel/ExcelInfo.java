@@ -51,12 +51,24 @@ public class ExcelInfo {
         }
     }
 
+    public void clearFunction1Value(){
+        for(int i=0;i<FUNCTION_COL.length;i++){
+            mFunction1Value.put(FUNCTION_COL[i], "");
+        }
+    }
+
     public void setFunction1Value(String key,String value){
         mFunction1Value.put(key,value);
     }
 
     public String getFunction1Value(String key){
         return mFunction1Value.get(key);
+    }
+
+    public void clearUi2Value(){
+        for(int i=0;i<UI_COL.length;i++){
+            mUi2Value.put(UI_COL[i], "");
+        }
     }
 
     public void setUi2Value(String key,String value){
