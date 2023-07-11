@@ -3,7 +3,7 @@
 
 ## 1.使用
 ```xml
-见ExcelHelp
+
 ```
 ## 2.项目引用
 * 1，root build.gradle中
