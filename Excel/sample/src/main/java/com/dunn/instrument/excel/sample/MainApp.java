@@ -18,10 +18,10 @@ public class MainApp extends Application {
     public void onCreate() {
         super.onCreate();
         ApiExcel.excelInit(getApplicationContext());
-//        ApiExcel.clearExcel();
+        ApiExcel.clearExcel();
         ApiExcel.setFunctionRowName();
-        ApiExcel.setUiRowName();
-        ApiExcel.getInfo().mModule0.mPid = Process.myPid()+"";
+//        ApiExcel.setUiRowName();
+//        ApiExcel.getInfo().mModule0.mPid = Process.myPid()+"";
     }
 
     @Override

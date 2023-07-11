@@ -70,6 +70,7 @@ public class ExcelDeal {
     public static final String FUNCTION13_COL = "function13";
     public static final String FUNCTION14_COL = "function14";
     public static final String FUNCTION15_COL = "function15";
+    public static final String FUNCTION16_COL = "function16";
     private Map<String, String> mFunctionMap = new HashMap<>();
     public static final String[] FUNCTION_COL = new String[]{
             FUNCTION1_COL,
@@ -87,6 +88,7 @@ public class ExcelDeal {
             FUNCTION13_COL,
             FUNCTION14_COL,
             FUNCTION15_COL,
+            FUNCTION16_COL,
     };
 
     //sheet 2

@@ -22,7 +22,9 @@ public class ApiExcel {
 
     public static void setFunctionRowName(){
         ExcelHelp.getInstance().setFunctionRowName(new String[]{
-                "wo", "ni", "ta",
+                "pkg", "process", "pid","adj","currentPid","currentPkgName",
+                "cpu","psskb","totalMemkb", "cpuscore","memscore","adjscore","switchscore","resultscore",
+                "sysCpuIdle","sysMemAvailable",
         });
     }
 
